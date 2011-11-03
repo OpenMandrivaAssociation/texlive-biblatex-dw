@@ -1,3 +1,9 @@
+# revision 21335
+# category Package
+# catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-dw
+# catalog-date 2011-02-07 09:47:54 +0100
+# catalog-license lppl
+# catalog-version 1.3c
 Name:		texlive-biblatex-dw
 Version:	1.3c
 Release:	1
@@ -73,6 +79,7 @@ vollstandig auf biblatex auf und kann nicht ohne biblatex
 %doc %{_texmfdistdir}/doc/latex/biblatex-dw/examples/en-footnote-dw.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex-dw/examples/en-footnote-dw.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex-dw/examples/examples-dw.bib
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -83,3 +90,5 @@ vollstandig auf biblatex auf und kann nicht ohne biblatex
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
