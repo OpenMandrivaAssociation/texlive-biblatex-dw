@@ -1,11 +1,11 @@
-# revision 21335
+# revision 24647
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-dw
-# catalog-date 2011-02-07 09:47:54 +0100
+# catalog-date 2011-11-21 10:13:18 +0100
 # catalog-license lppl
-# catalog-version 1.3c
+# catalog-version 1.4
 Name:		texlive-biblatex-dw
-Version:	1.3c
+Version:	1.4
 Release:	1
 Summary:	Humanities styles for biblatex
 Group:		Publishing
@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 A small collection of styles for the biblatex package. It was
@@ -35,19 +33,19 @@ vollstandig auf biblatex auf und kann nicht ohne biblatex
 (mindestens in der Version 0.9b) verwendet werden.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
