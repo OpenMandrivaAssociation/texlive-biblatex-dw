@@ -32,16 +32,8 @@ nicht direkt bereitgestellt werden. Biblatex-dw baut
 vollstandig auf biblatex auf und kann nicht ohne biblatex
 (mindestens in der Version 0.9b) verwendet werden.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -78,7 +70,6 @@ vollstandig auf biblatex auf und kann nicht ohne biblatex
 %doc %{_texmfdistdir}/doc/latex/biblatex-dw/examples/en-footnote-dw.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex-dw/examples/en-footnote-dw.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex-dw/examples/examples-dw.bib
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -89,5 +80,3 @@ vollstandig auf biblatex auf und kann nicht ohne biblatex
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
