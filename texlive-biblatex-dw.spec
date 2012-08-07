@@ -1,12 +1,12 @@
-# revision 24647
+# revision 27035
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-dw
-# catalog-date 2011-11-21 10:13:18 +0100
+# catalog-date 2012-06-28 18:57:40 +0200
 # catalog-license lppl
-# catalog-version 1.4
+# catalog-version 1.5
 Name:		texlive-biblatex-dw
-Version:	1.4
-Release:	2
+Version:	1.5
+Release:	1
 Summary:	Humanities styles for biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-dw
@@ -22,15 +22,14 @@ Requires(post):	texlive-kpathsea
 A small collection of styles for the biblatex package. It was
 designed for citations in the humanities and offers some
 features that are not provided by the standard biblatex styles.
-Biblatex-dw is dependent on biblatex (at least version 0.9b)
-and cannot be used without it. (Biblatex-dw will work with the
-full release version 1.0 of biblatex.) Eine kleine Sammlung von
-Stilen fur das Paket biblatex. Es ist auf
-geisteswissenschaftliche Zitierweise zugeschnitten und bietet
-einige Funktionen, die von den Standard-Stilen von biblatex
-nicht direkt bereitgestellt werden. Biblatex-dw baut
-vollstandig auf biblatex auf und kann nicht ohne biblatex
-(mindestens in der Version 0.9b) verwendet werden.
+The styles are dependent on biblatex (at least version 0.9b)
+and cannot be used without it. Eine kleine Sammlung von Stilen
+fur das Paket biblatex. Es ist auf geisteswissenschaftliche
+Zitierweise zugeschnitten und bietet einige Funktionen, die von
+den Standard-Stilen von biblatex nicht direkt bereitgestellt
+werden. Biblatex-dw baut vollstandig auf biblatex auf und kann
+nicht ohne biblatex (mindestens in der Version 0.9b) verwendet
+werden.
 
 %post
     %{_sbindir}/texlive.post
