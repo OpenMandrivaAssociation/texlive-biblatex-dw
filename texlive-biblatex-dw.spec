@@ -1,11 +1,11 @@
-# revision 27035
+# revision 31752
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-dw
-# catalog-date 2012-06-28 18:57:40 +0200
+# catalog-date 2013-09-23 15:23:00 +0200
 # catalog-license lppl
-# catalog-version 1.5
+# catalog-version 1.6a
 Name:		texlive-biblatex-dw
-Version:	1.5
+Version:	1.6a
 Release:	1
 Summary:	Humanities styles for biblatex
 Group:		Publishing
