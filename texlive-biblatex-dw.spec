@@ -6,7 +6,7 @@
 # catalog-version 1.5
 Name:		texlive-biblatex-dw
 Version:	1.5
-Release:	1
+Release:	2
 Summary:	Humanities styles for biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-dw
