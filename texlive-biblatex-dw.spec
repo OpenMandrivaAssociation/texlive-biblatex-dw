@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version 1.6a
 Name:		texlive-biblatex-dw
-Version:	1.6a
-Release:	9
+Version:	1.7
+Release:	1
 Summary:	Humanities styles for biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-dw
