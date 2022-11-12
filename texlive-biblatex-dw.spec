@@ -1,18 +1,12 @@
-# revision 31752
-# category Package
-# catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-dw
-# catalog-date 2013-09-23 15:23:00 +0200
-# catalog-license lppl
-# catalog-version 1.6a
 Name:		texlive-biblatex-dw
-Version:	1.7
-Release:	2
+Version:	42649
+Release:	1
 Summary:	Humanities styles for biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-dw
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-dw.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-dw.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-dw.r42649.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-dw.doc.r42649.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -32,12 +26,12 @@ nicht ohne biblatex (mindestens in der Version 0.9b) verwendet
 werden.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -72,7 +66,7 @@ werden.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
