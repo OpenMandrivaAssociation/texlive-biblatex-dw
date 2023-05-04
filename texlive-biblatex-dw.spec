@@ -1,6 +1,6 @@
 Name:		texlive-biblatex-dw
-Version:	42649
-Release:	2
+Version:	66579
+Release:	1
 Summary:	Humanities styles for biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-dw
